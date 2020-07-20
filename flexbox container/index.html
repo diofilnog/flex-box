@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Container</title>
+    <style type="text/css">
+       
+        #conteudo{
+            background: hsl(0, 0%, 86%);
+            height: 600px;
+            display: flex;
+            /* valores do flex-direction row ; row-reverse* ; column/
+            /*flex-direction: row-reverse; /* conteudo fica reverso ao original*/
+            /*flex-direction: column; /* deixa o elemento abaixo do outro*/
+            flex-direction: row; /* inverte a ordem dos elementos*/
+
+            /* valores da flex-wrep nowrap| wrap| wrap-reverse*/
+            flex-wrap: nowrap; /* nao deixa quebra de linha*/
+            /*flex-wrap: wrap; /*as linha sao ajustada conforme o tamanho da div*/
+            /*flex-wrap: wrap-reverse; /* inverte a ordem dos elementso*/
+
+            /*justify-content:flex-start ;/* posicao padrao*/
+            /*justify-content: flex-end;/* posicionar a direita*/
+            /*justify-content:center; /* centralizado*/
+           /* justify-content: space-between; /* esoacamento entre elementos (nao nos cantos)*/
+           justify-content: space-around; /* adiciona tambem espacamento nos cantos*/
+
+           /*align-items: stretch; /* forma padrao*/
+           /*align-items: center; /* centralizado*/
+           /*align-items: flex-start;/* elementos na parte superior*/
+           /*align-items: flex-end; /* elementos em baixo*/
+           align-items: baseline;/* formatacoa segue a linnha do texto superior */ 
+
+
+
+        }
+        .item{
+           height: 100px; 
+            width: 100px;                                 
+            background: white;
+            border: 1px solid gray ;
+            margin: 10px;  
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div id="conteudo">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+    </div>
+</body>
+</html>

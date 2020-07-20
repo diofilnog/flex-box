@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Flexbox itens</title>
+    <style>
+        #conteudo{
+            background: #dcdcdc;
+            height: 600px;
+            display: flex;
+        }
+        .item{
+            /*width: 200px;*/
+            height: 100px;
+            margin: 10px;
+            background: white;
+            border: 1px solid gray;
+            /*flex-grow:1; /* para definir proporcao do item quanto maior o numero maior o taamanho do elemento*/
+            flex-shrink: 1; /* para encolher o elemento quanto maior o numero menor o espaco do elemento*/ 
+            /*flex-basis: auto; /* padrao auto*/
+            flex-basis: 100px; /* definindo o tamanho inicial dos elementos substituindo o width*/
+
+        }
+
+        .item2{
+           /* flex-grow: 2;/* aumentar a proprocao do elemento*/
+           /*flex-shrink: 3; /* diminuir o tamanho de proporccao do elemento*/
+           
+        }
+
+
+
+        /*
+        .ordem1{
+            order: 1; /* para definir oredem dos elementos
+        }
+        
+       /* .ordem2{
+            order: 2;
+        }
+        
+        .ordem3{
+            order: 3;
+        }
+        
+        .ordem4{
+            order: 4;
+        }*/
+
+    </style>
+    
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div id="conteudo">
+        <div class="item item2 ordem4">01</div>
+        <div class="item ordem2">02</div>
+        <div class="item ordem3">03</div>
+        <div class="item ordem1">04</div>
+    </div>
+</body>
+</html>
